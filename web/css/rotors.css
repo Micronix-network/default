@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'rotor';
+	src:url('fonts/rotors/rotor.eot');
+	src:url('fonts/rotors/rotor.eot?#iefix') format('embedded-opentype'),
+		url('fonts/rotors/rotor.woff') format('woff'),
+		url('fonts/rotors/rotor.ttf') format('truetype'),
+		url('fonts/rotors/rotor.svg#rotor') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.rotor:before {
+	font-family: 'rotor';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.rotor.small{
+	font-size: 15px;
+}
+
+.rotor.normal{
+	font-size: 25px;
+}
+
+.rotor.big{
+	font-size: 45px;
+}
+
+.rotor-spinner-1:before {
+	content: "\e000";
+}
+.rotor-spinner-2:before {
+	content: "\e001";
+}
+.rotor-spinner-3:before {
+	content: "\e002";
+}
+.rotor-spinner-4:before {
+	content: "\e003";
+}
+.rotor-spinner-5:before {
+	content: "\e004";
+}
+.rotor-spinner-6:before {
+	content: "\e005";
+}
+.rotor-spinner-7:before {
+	content: "\e006";
+}
+.rotor-spinner-8:before {
+	content: "\e007";
+}
+.rotor-spinner-9:before {
+	content: "\e008";
+}
+.rotor-spinner-10:before {
+	content: "\e009";
+}

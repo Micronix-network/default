@@ -1,0 +1,306 @@
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.page-header {
+	margin: 0 auto;
+	padding: 3px;
+	background: #333;
+	text-align: center;
+        
+}
+
+.page-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 1.1;
+	color : white;
+}
+
+
+
+
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+  	overflow: hidden;
+	background: #eee;
+    margin: 0 auto -30px;
+    min-width: 995px;
+}
+
+.page-grid-content {
+	padding: 2px 5px;
+	margin: 0 auto;
+}
+
+
+
+
+.scroller {
+	height: 100%;
+}
+
+.scroller,
+.scroller-inner {
+	position: relative;
+}
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 2px 0 2px 1px;
+	border: 2px solid transparent;
+}
+
+.col:first-child {} /* all browsers except IE6 and lower */
+
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span_3_of_3 {
+	width: 100%; 
+	margin:0;
+}
+
+.span_2_of_3 {
+	width: 67.6%; 
+}
+
+.span_1_of_3 {
+	width: 32.2%;
+	min-width: 300px;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 956 PIXELS */
+
+@media only screen and (max-width: 956px) {
+	
+	.col { 
+		margin: 0.2% 0 0.2% 0%;
+	}
+	
+	.col:first-child { margin-left: 0; }
+	
+	
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+		min-height:100%;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	
+	#home_login {
+	width: 300px;
+	}
+	
+	#home_login .inputTextbox {
+		width: 272px;
+	}
+	
+	.display {
+		width: 272px;
+		min-width: 272px;
+	}
+	
+	.application_logo{
+		width: 96px;
+	}
+	
+
+.application_logo img{
+	width: 96px;
+}
+	
+	
+	.display_light {
+		width: 274px;
+	}
+}
+
+
+
+.layout_cell {
+border: solid 1px rgb(208, 208, 208);
+background-color: rgb(208, 208, 208);
+	
+}
+
+.select_border {
+border: solid 1px lime;
+}
+
+
+#cards_parking {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: left;
+	-webkit-box-align: end;
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-pack: left;
+	-moz-box-align: end;
+	display: box;
+	box-orient: horizontal;
+	box-pack: left;
+	box-align: end;
+	width: 100%;
+}
+
+.drawer {
+  
+  display: none;
+}
+.drawer.active {
+ 
+}
+
+/* Fallbacks */
+
+.no-csstransforms .top {
+  position: static;
+}
+
+.no-csstransforms .drawer nav {
+  display: none;
+}
+
+.no-csstransforms .drawer.active nav {
+  display: block;
+}
+
+#parking_zone {
+	-moz-box-shadow: inset 0 0 3px #000;
+	-webkit-box-shadow: inset 0 0 3px #000;
+	box-shadow: inner 0 0 3px #000;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-color: #ddd;
+	border-radius: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-transform: capitalize;
+	width: auto; 
+	vertical-align: top; 
+	padding: 2px; 
+	overflow-y: hidden;
+}
+
+
+#parking_zone_drawer {
+	position:relative;
+	background-color: #eee;
+	height: 30px;
+}
+
+.parking_zone_handle {
+	padding: 5px;
+	width: 100%;
+	height: 30px;
+	font-size: 14px;
+	font-weight:bold;
+	line-height:20px;
+	color: black;
+	background-color: #bbb;
+	-moz-box-shadow: 0px 2px 3px #888888;
+	-webkit-box-shadow: 0px 2px 3px #888888;
+	box-shadow: 0px 2px 3px #888888;
+}
+
+.parking_zone_handle:hover {
+	background-color: #fff;
+}
+
+#header_notify_area{
+	position: absolute;
+	top: 5px;
+	left: 33px;
+	width: 100px;
+	height:20px;
+	
+}
+
+.header_notify_pin{
+	width: 30px;
+	height: 20px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	float: left;
+	margin-right: 3px;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 3px;
+
+}
+
+
+.red_pin{
+	background-color: rgb(223, 34, 34);
+}
+
+.green_pin{
+	background-color: rgb(56, 151, 56);
+}
+
+
+.yellow_pin{
+	background-color: rgb(255, 198, 18);
+}
+
+.card_drawer_trigger:before {
+    color :#fff;
+    font-size: 26px;
+}
+
+
+
+
+
