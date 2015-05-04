@@ -62,7 +62,6 @@ select {
 	background-repeat: no-repeat;
 	color: #555;
 	text-overflow: ellipsis;
-	white-space: nowrap;
 	background-image: url(images/select-arrow.png)
 }
 
@@ -1015,4 +1014,45 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 
 .blur{
 	-webkit-filter: blur(10px);
+}
+
+
+.accordion, .accordion * {
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+.accordion {
+	overflow:hidden;
+	box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+	background:#f7f7f7;
+        margin-top: 5px;
+}
+
+.accordion-section-title {
+	width:100%;
+	padding:7px;
+	display:inline-block;
+	border-bottom:1px solid #1a1a1a;
+	background:#666;
+	transition:all linear 0.15s;
+	font-size:1.200em;
+	text-shadow:0px 1px 0px #1a1a1a;
+	color:#fff;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+	background:#4c4c4c;
+	text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+.accordion-section-content {
+	padding:3px;
+	display:none;
+        background-color: white;
 }

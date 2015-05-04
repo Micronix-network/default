@@ -8,7 +8,7 @@
 			show : null
 		}, options);
 
-		var $active, $content, $links = $(this).find('a');
+		var $active, $content, $links = $(this).find('.tabs a');
 
 		return this.each(function() {
 
@@ -19,7 +19,7 @@
 				$($(this).attr('href')).hide();
 			});
 
-			$(this).on('click', 'a', function(e) {
+			$(this).on('click', '.tabs a', function(e) {
 				$active.removeClass('active');
 				$content.hide();
 

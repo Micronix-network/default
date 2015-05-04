@@ -450,6 +450,13 @@ div.color_swatch {
 .multi_selselect select {
     width: 100%;
     background-image: none;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+
+.multiselect.TakeOver {
+    border-right: none;
+    border-left: 1px solid #ddd;
 }
 
 .multi_seloptions {
