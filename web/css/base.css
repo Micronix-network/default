@@ -37,8 +37,8 @@ html, body {
 	color: #fff;
 	font-weight: 300;
 	font-family: sans-serif, Arial;
-	min-width: 995px;
-	width:100%
+	width:100%;
+        min-width: 670px;
 }
 
 select {
@@ -879,9 +879,6 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	width: 50%;
-	max-width: 630px;
-	min-width: 500px;
 	height: auto;
 	z-index: 2000;
 	visibility: hidden;

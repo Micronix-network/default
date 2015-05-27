@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="default" default="remote_deploy" basedir=".">
+    <description>Deploy remoto dellapplicativo</description>
+    <property file="nbproject/project.properties"/>
+    
+    <property name="ant_ext.dir" location="ant" />
+    <property name="tomcat.manager.url" value="http://172.18.66.145:8080/manager/text"/>
+    <property name="tomcat.manager.username" value="remote_admin" />
+    <property name="tomcat.manager.password" value="admin" />
+    
+    <path id="deployer.classpath">
+        <fileset dir="${ant_ext.dir}">
+          <include name="*.jar"/>
+        </fileset>
+    </path>
+
+  <!-- Configure the custom Ant tasks for the Manager application -->
+  <taskdef resource="org/apache/catalina/ant/catalina.tasks"
+           classpathref="deployer.classpath"/>
+    
+    <target name="remote_deploy" description="Deploy to develop Tomcat">
+    <echo message="deploy ${basedir}/${dist.war} to ${tomcat.manager.url}"/>
+    <deploy url="${tomcat.manager.url}"
+          username="${tomcat.manager.username}"
+          password="${tomcat.manager.password}"
+          path="/default"
+          update="true"
+          war="${basedir}/${dist.war}" />
+    </target>
+    
+</project>
