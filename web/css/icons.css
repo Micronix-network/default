@@ -488,3 +488,15 @@
 .icon-home:before {
 	content: "\e64e";
 }
+
+.image_btn{
+    speak: none;
+    font-family: 'gaf';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 15px;
+}

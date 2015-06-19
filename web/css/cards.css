@@ -82,6 +82,17 @@
     margin-top: 0px;
 }
 
+.card-content img.card_wip_image{
+    border: 0px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 128px;
+    height:128px;
+    margin-left:-64px;
+    margin-top:-64px; 
+}
+
 .card-content div.card_type {
     -moz-box-shadow: inset 0 0 3px #aaa;
     -webkit-box-shadow: inset 0 0 3px #aaa;
@@ -115,14 +126,14 @@
 
 .card-header {
     position: relative;
-top:-100%;
-height: 25px;
-border-bottom: 1px solid #ddd;
-overflow: hidden;
-margin-left: 5px;
-margin-right: 5px;
-margin-bottom: 0px;
-margin-top: 2px;
+    top:-100%;
+    height: 25px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-top: 2px;
 }
 
 .card-header_title {
